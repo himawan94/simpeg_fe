@@ -26,7 +26,8 @@
    <div id="navbar_mobile" class="navbar-mobile blue-solid nav-mobile-padding">
       <div class="row">
          <div class="col-6 text-left logo-wrap">
-            <img id="logoHeader" src="assets/media/logo-sulsel-stroke-putih.png" alt="">
+            <a href="#background-page" class="page-scroll"><img id="logoHeader"
+                  src="assets/media/logo-sulsel-stroke-putih.png" alt=""></a>
          </div>
          <div class="col-6 text-right menu-wrap">
             <div id="menu-mobile">
@@ -36,25 +37,25 @@
                      MENU <i class="fa fa-bars"></i>
                   </button>
                   <div class="dropdown-menu dropdown-menu-right">
-                     <a href="#info-page" class="dropdown-item" type="button">INFO</a>
-                     <a href="#statistik-page" class="dropdown-item" type="button">STATISTIK</a>
-                     <a href="#fitur-page" class="dropdown-item" type="button">FITUR</a>
-                     <a href="login" class="dropdown-item" type="button">LOGIN</a>
+                     <a href="#info-page" class="dropdown-item page-scroll" type="button">INFO</a>
+                     <a href="#statistik-page" class="dropdown-item page-scroll" type="button">STATISTIK</a>
+                     <a href="#fitur-page" class="dropdown-item page-scroll" type="button">FITUR</a>
+                     <a href="login" class="dropdown-item page-scroll" type="button">LOGIN</a>
                   </div>
                </div>
             </div>
             <ul id="menu-full" class="list-group list-group-horizontal">
                <li class="list-group-item item-active">
-                  <a class="link-item" href="#info-page">INFO</a>
+                  <a class="link-item page-scroll" href="#info-page">INFO</a>
                </li>
                <li class="list-group-item link-active">
-                  <a class="link-item" href="#statistik-page">STATISTIK</a>
+                  <a class="link-item page-scroll" href="#statistik-page">STATISTIK</a>
                </li>
                <li class="list-group-item">
-                  <a class="link-item" href="#fitur-page">FITUR</a>
+                  <a class="link-item page-scroll" href="#fitur-page">FITUR</a>
                </li>
                <li class="list-group-item">
-                  <a class="link-item" href="/login">LOGIN</a>
+                  <a class="link-item page-scroll" href="/login">LOGIN</a>
                </li>
             </ul>
 
@@ -64,7 +65,7 @@
    <!-- Akhir Navbar -->
 
    <!-- Background -->
-   <section>
+   <section id="background-page">
       <div id="home" class="background-image col-md" style="" data-section="home">
          <div class="container">
             <div class="row">
@@ -399,7 +400,7 @@
 
                <!-- Links -->
                <h6 class="text-uppercase font-weight-bold">Support</h6>
-               
+
                <button disabled="" class="btn btn-link no-border phone-number">
                   <i class="fa fa-phone"></i> +628522123123123
                </button>
@@ -678,7 +679,38 @@
       $('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
    });
 </script>
+<script>
+   $('.page-scroll').on('click', function (e) {
 
+      var tujuan = $(this).attr('href');
+
+      var elemenTujuan = $(tujuan);
+
+      if (tujuan == "#info-page") {
+         $('html , body').animate({
+            scrollTop: elemenTujuan.offset().top - 125
+         });
+      }
+      else if( tujuan == "#statistik-page"){
+         $('html , body').animate({
+            scrollTop: elemenTujuan.offset().top - 60
+         });
+      }
+      else if(tujuan == "#fitur-page"){
+         $('html , body').animate({
+            scrollTop: elemenTujuan.offset().top - 30
+         });
+      }
+      else{
+         $('html , body').animate({
+            scrollTop: elemenTujuan.offset().top - 50
+         });
+      }
+
+
+      e.preventDefault();
+   });
+</script>
 <!--end::Page Scripts -->
 
 

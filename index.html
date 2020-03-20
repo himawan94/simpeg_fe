@@ -31,29 +31,30 @@
          <div class="col-6 text-right menu-wrap">
             <div id="menu-mobile">
                <div class="btn-group">
-                  <button type="button" class="btn btn-brand dropdown-toggle no-border no-background" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" class="btn btn-brand dropdown-toggle no-border no-background"
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      MENU <i class="fa fa-bars"></i>
                   </button>
                   <div class="dropdown-menu dropdown-menu-right">
-                     <button class="dropdown-item" type="button">MENU 1</button>
-                     <button class="dropdown-item" type="button">MENU 2</button>
-                     <button class="dropdown-item" type="button">MENU 3</button>
-                     <button class="dropdown-item" type="button">MENU 4</button>
+                     <a href="#info-page" class="dropdown-item" type="button">INFO</a>
+                     <a href="#statistik-page" class="dropdown-item" type="button">STATISTIK</a>
+                     <a href="#fitur-page" class="dropdown-item" type="button">FITUR</a>
+                     <a href="login" class="dropdown-item" type="button">LOGIN</a>
                   </div>
                </div>
             </div>
             <ul id="menu-full" class="list-group list-group-horizontal">
                <li class="list-group-item item-active">
-                  <a class="link-item" href="">MENU 1</a>
+                  <a class="link-item" href="#info-page">INFO</a>
                </li>
                <li class="list-group-item link-active">
-                  <a class="link-item" href="">MENU 2</a>
+                  <a class="link-item" href="#statistik-page">STATISTIK</a>
                </li>
                <li class="list-group-item">
-                  <a class="link-item" href="">MENU 3</a>
+                  <a class="link-item" href="#fitur-page">FITUR</a>
                </li>
                <li class="list-group-item">
-                  <a class="link-item" href="">MENU 4</a>
+                  <a class="link-item" href="/login">LOGIN</a>
                </li>
             </ul>
 
@@ -64,9 +65,7 @@
 
    <!-- Background -->
    <section>
-      <div id="home" class="background-image col-md"
-         style="height: 700px; background-image: url(assets/media/background02.png);background-size:cover; background-position:relative; "
-         data-section="home">
+      <div id="home" class="background-image col-md" style="" data-section="home">
          <div class="container">
             <div class="row">
                <div class="col">
@@ -83,37 +82,45 @@
    <section>
       <div class="container container-login wow fadeInUp" id="multiplelogin">
          <div class="row">
-            <div class="box">
-               <div class="icon">01</div>
-               <div class="content">
-                  <h3>SIMPEG</h3>
-                  <p>Sistem Kepegawaian Dinas Pariwisata Provinsi Sulawesi Selatan</p>
-                  <a href="#" id="tombolLogin">Login</a>
+            <div class="col-md-3">
+               <div class="box">
+                  <div class="icon">01</div>
+                  <div class="content">
+                     <h3>SIMPEG</h3>
+                     <p>Sistem Kepegawaian Dinas Pariwisata Provinsi Sulawesi Selatan</p>
+                     <a href="#" id="tombolLogin">Login</a>
+                  </div>
                </div>
             </div>
-            <div class="box">
-               <div class="icon">02</div>
-               <div class="content">
-                  <h3>Aset</h3>
-                  <p>Daftar Aset Dinas Kebudayaan dan Pariwisata Sulawesi Selatan</p>
-                  <a href="#" id="tombolLogin">Login</a>
+            <div class="col-md-3">
+               <div class="box">
+                  <div class="icon">02</div>
+                  <div class="content">
+                     <h3>Aset</h3>
+                     <p>Daftar Aset Dinas Kebudayaan dan Pariwisata Sulawesi Selatan</p>
+                     <a href="#" id="tombolLogin">Login</a>
+                  </div>
                </div>
             </div>
-            <div class="box">
-               <div class="icon">03</div>
-               <div class="content">
-                  <h3>Manajemen PAD</h3>
-                  <p>Manajemen Pendapatan Asli Daerah Dinas Kebudayaan dan Pariwisata Provinsi Sulawesi Selatan
-                  </p>
-                  <a href="#" id="tombolLogin">Login</a>
+            <div class="col-md-3">
+               <div class="box">
+                  <div class="icon">03</div>
+                  <div class="content">
+                     <h3>Manajemen PAD</h3>
+                     <p>Manajemen Pendapatan Asli Daerah Dinas Kebudayaan dan Pariwisata Provinsi Sulawesi Selatan
+                     </p>
+                     <a href="#" id="tombolLogin">Login</a>
+                  </div>
                </div>
             </div>
-            <div class="box">
-               <div class="icon">04</div>
-               <div class="content">
-                  <h3>Program</h3>
-                  <p>Daftar Program Dinas Kebudayaan dan Pariwisata Provinsi Sulawesi Selatan</p>
-                  <a href="#" id="tombolLogin">Login</a>
+            <div class="col-md-3">
+               <div class="box">
+                  <div class="icon">04</div>
+                  <div class="content">
+                     <h3>Program</h3>
+                     <p>Daftar Program Dinas Kebudayaan dan Pariwisata Provinsi Sulawesi Selatan</p>
+                     <a href="#" id="tombolLogin">Login</a>
+                  </div>
                </div>
             </div>
          </div>
@@ -122,7 +129,7 @@
    <!-- Akhir Multiple Login -->
 
    <!-- Tentang SIMPEG -->
-   <section>
+   <section id="info-page">
       <div id="tentangSimpeg">
       </div>
       <div class="container">
@@ -137,7 +144,7 @@
             </div>
          </div>
          <div id="infoSimpeg" class="row justify-content-center">
-            <div class="col-8 wow fadeInUp">
+            <div class="col-sm-8 wow fadeInUp">
                <p>Adalah Sistem Informasi yang dirancang untuk menangani berbagai hal dalam pengurusan kepegawaian
                   Dinas
                   Kebudayaan dan Pariwisata Sulawesi Selatan. Mulai dari pengisian, pengolahan dan pemusatan data
@@ -160,19 +167,19 @@
    <!-- Akhir Tentang SIMPEG -->
 
    <!-- Statistik -->
-   <section class="statistik mt-5">
+   <section id="statistik-page" class="statistik mt-5">
       <div class="container">
          <div class="row text-center">
-            <div class="col">
+            <div class="col-sm">
                <h1 class="wow fadeInUp" id="statistik">STATISTIK KEPEGAWAIAN</h1>
             </div>
          </div>
          <div class="row">
-            <div class="col" style="padding: 0px;">
+            <div class="col-sm" style="padding: 0px;">
                <div id="chartdiv"></div>
             </div>
 
-            <div class="col">
+            <div class="col-sm">
                <div class="quote">
                   <div>
                      <div class="boxKeterangan boxKeterangan1">
@@ -186,12 +193,9 @@
                   </div>
                </div>
             </div>
-
-
-
          </div>
          <div class="row">
-            <div class="col" style="padding: 0px;">
+            <div class="col-sm" style="padding: 0px;">
                <div id="chartdiv2"></div>
             </div>
          </div>
@@ -199,26 +203,26 @@
 
       <div class="middle">
          <div class="counting-sec">
-            <div class="inner-width">
-               <div class="col">
+            <div class="row inner-width text-center">
+               <div class="col-6 col-md-3">
                   <i class="fas fa-briefcase"></i>
                   <div class="num">1246</div>
                   <h5>Total Pegawai</h5>
                </div>
 
-               <div class="col">
+               <div class="col-6 col-md-3">
                   <i class="fas fa-user-tie"></i>
                   <div class="num">1246</div>
                   <h5>Pegawai PNS</h5>
                </div>
 
-               <div class="col">
+               <div class="col-6 col-md-3">
                   <i class="fas fa-user-tie"></i>
                   <div class="num">1246</div>
                   <h5>Pegawai CPNS</h5>
                </div>
 
-               <div class="col">
+               <div class="col-6 col-md-3">
                   <i class="fas fa-users"></i>
                   <div class="num">1246</div>
                   <h5>Pegawai Pensiun</h5>
@@ -226,20 +230,23 @@
             </div>
          </div>
       </div>
+
+      <div class="">
+
+      </div>
    </section>
 
    <!-- Akhir statistik -->
 
    <!-- Awal Fitur -->
-   <section class="fitur">
+   <section id="fitur-page" class="fitur">
       <div class="container text-center">
          <div class="row justify-content-center mb-3">
             <div class="col">
                <div class="text-center wow fadeInUp" id="fitur">FITUR</div>
             </div>
          </div>
-         <div class="row justify-content-center wow fadeInUp"
-            style="margin-top: 60px; margin-left: 50px; margin-right: 50px;">
+         <div class="row justify-content-center wow fadeInUp fitur-wrap" style="">
             <div class="col-md">
                <img src="assets/media/web-icon/png/021-search engine.png" style="width: 150px;">
                <h5 style="margin-top: 20px;" id="">ONLINE</h5>
@@ -279,8 +286,7 @@
 
          <div class="media">
             <div class="col-md">
-               <img src="assets/media/bgright.png"
-                  style="width: 38%; margin-top: 20px; background-position: right; margin-right: -880px;">
+               <img class="media-img" src="assets/media/bgright.png" style="">
 
             </div>
 
@@ -374,12 +380,12 @@
    <footer class="page-footer font-small footer-background pt-4 mt-5" style="color: white;">
       <div class="container text-center text-md-left mt-5">
          <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-md-3">
                <h6>Sistem Informasi Kebudayaan dan Pariwisata Sulsel</h6>
                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                <p>Jl. Jend. Sudirman No.23, Mangkura, Kec. Ujung Pandang, Kota Makassar, Sulawesi Selatan 90114</p>
             </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-automb-4">
+            <div class="offset-sm-1 col-md-4">
                <h6 class="text-uppercase font-weight-bold">Links</h6>
                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                <p>
@@ -389,24 +395,22 @@
                   <a href="#!" style="color: white;">Video</a>
                </p>
             </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-md-4 text-center">
 
                <!-- Links -->
                <h6 class="text-uppercase font-weight-bold">Support</h6>
-               <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-
-               <li style="list-style-type:none;">
-                  <div class="row">
-                     <div class="col-1">
-                        <i class="fa fa-phone">
-                        </i>
-                     </div>
-                     <div class="col-9">
-                        <p>+628522123123123</p>
-                     </div>
+               
+               <button disabled="" class="btn btn-link no-border phone-number">
+                  <i class="fa fa-phone"></i> +628522123123123
+               </button>
+               <!-- <div class="row">
+                  <div class="col-1">
+                     <i class="fa fa-phone"></i>
                   </div>
-               </li>
-
+                  <div class="col-9">
+                     <p></p>
+                  </div>
+               </div> -->
             </div>
          </div>
 
@@ -678,4 +682,4 @@
 <!--end::Page Scripts -->
 
 
-</html>]
+</html>

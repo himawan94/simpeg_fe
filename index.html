@@ -349,20 +349,43 @@
       font-size: 20px;
     }
 
+    #navbar-mobile {
+      width: 100vw;
+      background-color: tomato;
+      padding: 10px 10px;
+      
+    }
+
+    #logoHeader {
+      width: 150px;
+
+    }
+
+    .list-group-item {
+      border: none;
+      background-color: transparent;
+      padding: 0.25rem 0rem;
+      margin-left: 2.5rem;
+    }
+
   </style>
 </head>
 
 <body>
   <!-- Navbar -->
-  <div id="navbar_mobile" class="navbar-mobile blue-solid nav-mobile-padding">
-    <div class="row">
-      <div class="col-6">
-        <div class="dropdown">
-          <button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-bars fas-c">
-            </i>
-            EVENT
-          </button>
+  <div id="navbar-mobile">
+    <div class="row d-none">
+      <div class="col text-left">
+        <img id="logoHeader" src="assets/media/logo-sulsel-stroke-putih.png" alt="logosulsel">
+      </div>
+      <div class="col">
+        <div class="wrap-menu-dekstop">
+          <ul class="list-group list-group-horizontal" style="float: right;">
+            <li class="list-group-item">Info</li>
+            <li class="list-group-item">Statistik</li>
+            <li class="list-group-item">Daftar</li>
+            <li class="list-group-item">Login</li>
+          </ul>
         </div>
       </div>
     </div>
